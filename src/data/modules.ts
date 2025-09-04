@@ -6,7 +6,11 @@ import {
   Zap,
   Brain,
   Headphones,
-  TrendingUp
+  TrendingUp,
+  Mic,
+  Settings,
+  BookOpen,
+  Layers
 } from 'lucide-react';
 import { Module } from '../types';
 
@@ -183,19 +187,44 @@ export const modules: Module[] = [
           {
             type: 'highlight',
             text: 'Aplicación práctica: La escala whole tone sobre acordes dominantes alterados crea un sonido característico del fusion moderno.'
+          }
+        ]
+      },
+      {
+        id: 'rearmonia-avanzada',
+        title: 'Rearmonización Avanzada',
+        description: 'Técnicas de rearmonización para crear nuevas sonoridades',
+        duration: '55 min',
+        difficulty: 'Experto',
+        content: [
+          {
+            type: 'heading',
+            text: 'Sustituciones Armónicas Complejas'
+          },
+          {
+            type: 'paragraph',
+            text: 'La rearmonización permite transformar progresiones simples en secuencias armónicas sofisticadas que mantienen la estructura melódica original.'
           },
           {
             type: 'subheading',
-            text: 'Escalas Étnicas en Fusion'
+            text: 'Sustitución Tritonal Extendida'
           },
           {
             type: 'list',
             items: [
-              'Escala Húngara Menor: 1-2-b3-#4-5-b6-7',
-              'Escala Japonesa (Hirajoshi): 1-2-b3-5-b6',
-              'Escala Árabe: 1-b2-3-4-5-b6-7',
-              'Escala Española: 1-b2-3-4-5-b6-b7'
+              'Sustitución básica: G7 → Db7 (tritono de distancia)',
+              'Cadenas de tritonos: G7-Db7-F7-B7-E7-Bb7',
+              'Tritonos con extensiones: Db13#11 en lugar de G7alt',
+              'Resolución cromática: Movimiento de bajos por semitonos'
             ]
+          },
+          {
+            type: 'code',
+            text: 'Progresión Original: Dm7 - G7 - Cmaj7\nRearmonizada: Dm7 - Db13#11 - Cmaj7\nBajo cromático: D - Db - C'
+          },
+          {
+            type: 'highlight',
+            text: 'Técnica avanzada: Bill Evans popularizó el uso de acordes de aproximación para crear voice leading suave y sofisticado.'
           }
         ]
       }
@@ -293,133 +322,108 @@ export const modules: Module[] = [
           {
             type: 'highlight',
             text: 'Secreto profesional: El vibrato debe ser una extensión natural de tu expresión musical, no un efecto añadido. Practica diferentes velocidades y amplitudes.'
-          },
-          {
-            type: 'subheading',
-            text: 'Fraseo Melódico Sofisticado'
-          },
-          {
-            type: 'paragraph',
-            text: 'El fraseo en smooth jazz requiere comprensión profunda del espacio musical y la respiración melódica.'
-          },
-          {
-            type: 'list',
-            items: [
-              'Uso del silencio: Los espacios son tan importantes como las notas',
-              'Dinámicas graduales: Crescendos y diminuendos controlados',
-              'Articulación variada: Combinación de legato, staccato y tenuto',
-              'Timing expresivo: Slight behind/ahead del beat para crear groove'
-            ]
           }
         ]
       },
       {
-        id: 'improvisacion-avanzada',
-        title: 'Técnicas de Improvisación Avanzadas',
-        description: 'Desarrollo de un lenguaje improvisatorio personal y sofisticado',
-        duration: '60 min',
-        difficulty: 'Experto',
+        id: 'tecnicas-extendidas',
+        title: 'Técnicas Extendidas',
+        description: 'Técnicas no convencionales para sonoridades únicas',
+        duration: '40 min',
+        difficulty: 'Avanzado',
         content: [
           {
             type: 'heading',
-            text: 'Desarrollo Motívico Avanzado'
+            text: 'Técnicas Percusivas en la Guitarra'
           },
           {
             type: 'paragraph',
-            text: 'La improvisación sofisticada se basa en el desarrollo coherente de ideas musicales, no en la mera ejecución de escalas.'
+            text: 'Las técnicas percusivas expanden las posibilidades sonoras de la guitarra, incorporando elementos rítmicos que tradicionalmente pertenecían a la percusión.'
           },
           {
             type: 'subheading',
-            text: 'Técnicas de Transformación Motívica'
+            text: 'Slap Guitar Technique'
           },
           {
             type: 'list',
             items: [
-              'Inversión: Voltear intervalos hacia arriba/abajo',
-              'Retrogradación: Tocar el motivo hacia atrás',
-              'Aumentación/Diminución: Cambiar valores rítmicos',
-              'Transposición secuencial: Mover el motivo por grados'
-            ]
-          },
-          {
-            type: 'highlight',
-            text: 'Concepto fundamental: Un solo de 2 minutos puede desarrollarse completamente a partir de un motivo de 3-4 notas, como demuestran los grandes maestros.'
-          },
-          {
-            type: 'subheading',
-            text: 'Displacement Rítmico'
-          },
-          {
-            type: 'paragraph',
-            text: 'El displacement crea la ilusión de que el compás se ha movido, generando tensión rítmica sofisticada.'
-          },
-          {
-            type: 'list',
-            items: [
-              'Displacement de corchea: Mover frases una corchea adelante/atrás',
-              'Displacement métrico: Tocar en 3/4 sobre 4/4',
-              'Displacement de acento: Cambiar acentos sin cambiar notas',
-              'Polyrhythm: Superposición de diferentes subdivisiones'
+              'Thumb slap: Golpe con el pulgar para graves percusivos',
+              'Finger pop: Pellizco con dedos para agudos percusivos',
+              'Muted slap: Slap en cuerdas apagadas para efectos rítmicos',
+              'Combinaciones: Slap + picking tradicional'
             ]
           },
           {
             type: 'code',
-            text: 'Ejercicio de Displacement:\nFrase original: 1-e-+-a-2-e-+-a\nDisplacement +1: e-+-a-2-e-+-a-3\nMantener la frase, cambiar su posición métrica'
+            text: 'Patrón Slap Básico:\nT = Thumb slap, P = Pop\nT - - P - T - P -\nCuerdas: E(6) - - G(3) - E(6) - B(2) -'
           }
         ]
       },
       {
-        id: 'vocabulario-melodico',
-        title: 'Vocabulario Melódico de Maestros',
-        description: 'Licks y frases características de los grandes del fusion',
+        id: 'sweep-picking',
+        title: 'Sweep Picking Avanzado',
+        description: 'Dominio de la técnica de barrido para arpeggios veloces',
+        duration: '50 min',
+        difficulty: 'Experto',
+        content: [
+          {
+            type: 'heading',
+            text: 'Fundamentos del Sweep Picking'
+          },
+          {
+            type: 'paragraph',
+            text: 'El sweep picking permite ejecutar arpeggios a velocidades extremas manteniendo claridad articulatoria, técnica esencial en el fusion moderno.'
+          },
+          {
+            type: 'subheading',
+            text: 'Mecánica Básica del Sweep'
+          },
+          {
+            type: 'list',
+            items: [
+              'Movimiento fluido de la púa: Un solo movimiento por dirección',
+              'Sincronización mano izquierda: Dedos presionan justo cuando la púa llega',
+              'Muting selectivo: Apagar cuerdas que no suenan',
+              'Economía de movimiento: Mínimo esfuerzo, máximo resultado'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Arpeggio Am (3 cuerdas):\nG: 5 (C)\nB: 5 (E)\nE: 8 (A)\nPúa: Downstroke continuo\nTiming: Triplets a 120 BPM'
+          }
+        ]
+      },
+      {
+        id: 'legato-extremo',
+        title: 'Legato Extremo',
+        description: 'Técnicas de legato para fluidez melódica suprema',
         duration: '45 min',
         difficulty: 'Avanzado',
         content: [
           {
             type: 'heading',
-            text: 'Licks Característicos de John McLaughlin'
+            text: 'Legato Multi-String'
           },
           {
             type: 'paragraph',
-            text: 'McLaughlin revolucionó la guitarra fusion con su síntesis única de jazz, rock y música india.'
+            text: 'El legato extremo permite crear líneas melódicas que fluyen sin interrupciones entre cuerdas, creando un sonido casi vocal.'
           },
           {
             type: 'subheading',
-            text: 'Frases Signature de McLaughlin'
+            text: 'Técnicas de Conexión'
           },
           {
             type: 'list',
             items: [
-              'Scalar runs cromáticos: Combinación de escalas diatónicas con cromatismo',
-              'Intervalos de cuarta: Uso melódico de cuartas perfectas y aumentadas',
-              'Tremolo picking: Técnica de picking rápido para crear texturas',
-              'Bending microtonal: Influencia de la música india en la afinación'
+              'Hammer-on desde aire: Atacar cuerda sin picking previo',
+              'Pull-off a cuerda abierta: Transiciones suaves',
+              'Slide entre cuerdas: Conectar notas en cuerdas diferentes',
+              'Legato cromático: Secuencias cromáticas fluidas'
             ]
           },
           {
             type: 'code',
-            text: 'Lick McLaughlin en Em:\nE: 12-15-12-14-12\nB: 15-12-15-13-12\nG: 14-12-14-11-12\nTécnica: Alternate picking estricto'
-          },
-          {
-            type: 'subheading',
-            text: 'Vocabulario de Al Di Meola'
-          },
-          {
-            type: 'paragraph',
-            text: 'Di Meola aporta precisión técnica extrema y influencias mediterráneas al fusion.'
-          },
-          {
-            type: 'list',
-            items: [
-              'Tremolo mediterráneo: Técnica derivada de la guitarra flamenca',
-              'Scalar sequences: Secuencias escalísticas en patrones de 4',
-              'Chord melody: Melodía y armonía simultáneas',
-              'Speed picking: Alternate picking a velocidades extremas'
-            ]
-          },
-          {
-            type: 'highlight',
-            text: 'Insight técnico: Di Meola desarrolló una técnica de picking que permite velocidades extremas manteniendo claridad articulatoria absoluta.'
+            text: 'Ejercicio Legato Cromático:\nE: 12h13h14h15p14p13p12\nB: 12h13h14h15p14p13p12\nSolo mano izquierda, tempo 80 BPM'
           }
         ]
       }
@@ -462,36 +466,6 @@ export const modules: Module[] = [
           {
             type: 'highlight',
             text: 'Innovación clave: Metheny fue pionero en el uso de la guitarra sintetizador y efectos electrónicos para expandir la paleta sonora del jazz.'
-          },
-          {
-            type: 'subheading',
-            text: 'Técnicas Características'
-          },
-          {
-            type: 'list',
-            items: [
-              'Legato fluido: Conexión seamless entre notas',
-              'Uso de chorus: Efecto signature que define su sonido',
-              'Melodías cantables: Construcción de líneas melódicas memorables',
-              'Armonías abiertas: Voicings espaciosos y resonantes'
-            ]
-          },
-          {
-            type: 'subheading',
-            text: 'Innovación Tecnológica'
-          },
-          {
-            type: 'paragraph',
-            text: 'Metheny ha sido pionero en la integración de tecnología musical avanzada.'
-          },
-          {
-            type: 'list',
-            items: [
-              'Guitarra sintetizador Roland: Expansión de posibilidades sonoras',
-              'Orchestrion: Orquesta mecánica controlada por guitarra',
-              'Efectos procesados: Delays complejos y reverbs espaciales',
-              'MIDI guitar: Control de instrumentos virtuales desde la guitarra'
-            ]
           }
         ]
       },
@@ -526,95 +500,423 @@ export const modules: Module[] = [
           {
             type: 'highlight',
             text: 'Concepto revolucionario: Holdsworth pensaba en "chord scales" donde cada acorde sugiere una escala específica, no en escalas que funcionan sobre progresiones.'
-          },
-          {
-            type: 'subheading',
-            text: 'Técnica Legato Suprema'
-          },
-          {
-            type: 'paragraph',
-            text: 'La técnica legato de Holdsworth es considerada la más avanzada en la historia de la guitarra eléctrica.'
-          },
-          {
-            type: 'list',
-            items: [
-              'Hammer-ons/pull-offs: Velocidad y claridad extremas',
-              'String skipping: Saltos de cuerdas en contexto legato',
-              'Wide intervals: Intervalos amplios ejecutados con legato',
-              'Chromatic approach: Aproximaciones cromáticas fluidas'
-            ]
-          },
-          {
-            type: 'code',
-            text: 'Ejercicio Legato Holdsworth:\nG: 5h7p5h8p5h7p5\nD: 7h9p7h10p7h9p7\nSolo mano izquierda, sin picking'
-          },
-          {
-            type: 'subheading',
-            text: 'Sonido y Equipamiento'
-          },
-          {
-            type: 'list',
-            items: [
-              'Amplificación: Amplificadores de estado sólido para claridad',
-              'Efectos: Chorus, delay y reverb para crear espacialidad',
-              'Cuerdas: Calibres pesados para mayor sustain',
-              'Técnica de ataque: Toque suave para maximizar legato'
-            ]
           }
         ]
       },
       {
-        id: 'scott-henderson',
-        title: 'Scott Henderson',
-        description: 'Síntesis perfecta entre blues y fusion',
+        id: 'frank-gambale',
+        title: 'Frank Gambale',
+        description: 'Maestro del sweep picking y la técnica economy',
+        duration: '45 min',
+        difficulty: 'Avanzado',
+        content: [
+          {
+            type: 'heading',
+            text: 'Economy Picking Revolution'
+          },
+          {
+            type: 'paragraph',
+            text: 'Frank Gambale revolucionó la técnica de guitarra con su sistema de economy picking, que maximiza la eficiencia del movimiento de la púa.'
+          },
+          {
+            type: 'subheading',
+            text: 'Principios del Economy Picking'
+          },
+          {
+            type: 'list',
+            items: [
+              'Dirección natural: Seguir la dirección natural de la púa',
+              'Sweep en cambios de cuerda: Barrido cuando es eficiente',
+              'Alternate cuando es necesario: Combinación inteligente',
+              'Minimizar movimientos: Máxima eficiencia técnica'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Patrón Economy Picking:\nE: 5-8 (down-up)\nB: 5-8 (down-up sweep)\nG: 5-7 (down-up)\nCombina alternate y sweep'
+          }
+        ]
+      },
+      {
+        id: 'greg-howe',
+        title: 'Greg Howe',
+        description: 'Fusión perfecta entre rock y jazz con técnica impecable',
         duration: '40 min',
         difficulty: 'Avanzado',
         content: [
           {
             type: 'heading',
-            text: 'La Síntesis Blues-Fusion de Scott Henderson'
+            text: 'La Síntesis Rock-Jazz de Greg Howe'
           },
           {
             type: 'paragraph',
-            text: 'Scott Henderson logró la síntesis perfecta entre la expresividad del blues y la sofisticación armónica del fusion, creando un estilo único e influyente.'
+            text: 'Greg Howe logró la fusión perfecta entre la agresividad del rock y la sofisticación del jazz, creando un estilo que influyó profundamente en el fusion moderno.'
           },
           {
             type: 'subheading',
-            text: 'Técnica Híbrida Característica'
+            text: 'Técnicas Características'
           },
           {
             type: 'list',
             items: [
-              'Hybrid picking: Combinación de púa y dedos para texturas únicas',
-              'Blues bends en contexto jazz: Bending expresivo sobre armonías complejas',
-              'Chicken picking: Técnica percusiva derivada del country',
-              'Muted strings: Uso de cuerdas apagadas para efectos rítmicos'
+              'Legato-picking híbrido: Combinación fluida de técnicas',
+              'Wide interval leaps: Saltos melódicos amplios',
+              'Chromatic approach notes: Aproximaciones cromáticas sofisticadas',
+              'Rhythmic displacement: Desplazamiento rítmico avanzado'
             ]
           },
           {
             type: 'highlight',
-            text: 'Técnica signature: Henderson usa hybrid picking para crear líneas que suenan como si fueran tocadas por múltiples instrumentos simultáneamente.'
-          },
+            text: 'Innovación técnica: Howe desarrolló un enfoque híbrido que combina la precisión del alternate picking con la fluidez del legato.'
+          }
+        ]
+      },
+      {
+        id: 'shawn-lane',
+        title: 'Shawn Lane',
+        description: 'Velocidad extrema y precisión técnica absoluta',
+        duration: '50 min',
+        difficulty: 'Experto',
+        content: [
           {
-            type: 'subheading',
-            text: 'Aproximación Armónica Única'
+            type: 'heading',
+            text: 'La Técnica Extrema de Shawn Lane'
           },
           {
             type: 'paragraph',
-            text: 'Henderson aplica conceptos de jazz avanzado manteniendo la esencia emocional del blues.'
+            text: 'Shawn Lane llevó la técnica de guitarra a límites nunca antes explorados, combinando velocidad extrema con precisión absoluta y musicalidad sofisticada.'
+          },
+          {
+            type: 'subheading',
+            text: 'Desarrollo Técnico Sistemático'
           },
           {
             type: 'list',
             items: [
-              'Blues scales sobre changes: Pentatónica blues en progresiones jazz',
-              'Chord tones como targets: Notas objetivo en improvisación',
-              'Outside playing: Salir de la tonalidad de forma controlada',
-              'Rhythmic displacement: Desplazamiento rítmico de frases blues'
+              'Práctica metronómica extrema: Incrementos de 1 BPM',
+              'Ejercicios de independencia: Cada dedo desarrollado individualmente',
+              'Coordinación perfecta: Sincronización milimétrica entre manos',
+              'Resistencia muscular: Entrenamiento para sesiones largas'
             ]
           },
           {
             type: 'code',
-            text: 'Lick Henderson sobre Dm7-G7-Cmaj7:\nE: 10b12-10-8\nB: 11-8-10\nG: 10-7-9\nCombina blues bending con chord tones'
+            text: 'Ejercicio Lane (Chromatic):\nE: 1-2-3-4-5-6-7-8-9-10-11-12\nTempo inicial: 60 BPM\nIncremento: +5 BPM cada día\nObjetivo: 200+ BPM'
+          }
+        ]
+      },
+      {
+        id: 'brett-garsed',
+        title: 'Brett Garsed',
+        description: 'Hybrid picking y técnicas australianas únicas',
+        duration: '35 min',
+        difficulty: 'Avanzado',
+        content: [
+          {
+            type: 'heading',
+            text: 'Hybrid Picking Avanzado'
+          },
+          {
+            type: 'paragraph',
+            text: 'Brett Garsed perfeccionó el hybrid picking hasta convertirlo en una técnica expresiva que permite texturas imposibles con picking tradicional.'
+          },
+          {
+            type: 'subheading',
+            text: 'Técnicas Signature'
+          },
+          {
+            type: 'list',
+            items: [
+              'Banjo rolls: Patrones derivados del banjo bluegrass',
+              'Chicken picking: Técnica percusiva con hybrid picking',
+              'String skipping extremo: Saltos de cuerdas complejos',
+              'Pedal tones: Notas pedal con melodías superpuestas'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Patrón Banjo Roll:\nPúa: E(6) - Dedo medio: B(2) - Anular: E(1)\nRepetir en diferentes posiciones\nTempo: 140 BPM en tresillos'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'equipamiento-sonido',
+    title: 'Equipamiento y Sonido',
+    icon: Settings,
+    description: 'Configuración profesional de equipamiento para fusion',
+    sections: [
+      {
+        id: 'amplificacion-fusion',
+        title: 'Amplificación para Fusion',
+        description: 'Selección y configuración de amplificadores para sonido fusion',
+        duration: '40 min',
+        difficulty: 'Intermedio',
+        content: [
+          {
+            type: 'heading',
+            text: 'Amplificadores Clásicos del Fusion'
+          },
+          {
+            type: 'paragraph',
+            text: 'La elección del amplificador define fundamentalmente el carácter sonoro del fusion. Cada amplificador aporta características únicas que han definido épocas del género.'
+          },
+          {
+            type: 'subheading',
+            text: 'Amplificadores de Estado Sólido'
+          },
+          {
+            type: 'list',
+            items: [
+              'Roland JC-120: Chorus integrado, sonido cristalino',
+              'Polytone Mini-Brute: Favorito del jazz, respuesta plana',
+              'Yamaha G100: Versatilidad y confiabilidad',
+              'Lab Series L5: Usado por Allan Holdsworth, sonido único'
+            ]
+          },
+          {
+            type: 'highlight',
+            text: 'Ventaja clave: Los amplificadores de estado sólido ofrecen headroom limpio y respuesta consistente, ideales para efectos complejos.'
+          },
+          {
+            type: 'subheading',
+            text: 'Configuración de Sonido Limpio'
+          },
+          {
+            type: 'list',
+            items: [
+              'EQ plano como punto de partida',
+              'Ligero boost en medios-agudos para claridad',
+              'Compresión sutil para sustain uniforme',
+              'Reverb espacial para profundidad'
+            ]
+          }
+        ]
+      },
+      {
+        id: 'efectos-fusion',
+        title: 'Efectos Esenciales del Fusion',
+        description: 'Cadena de efectos profesional para guitarra fusion',
+        duration: '45 min',
+        difficulty: 'Intermedio',
+        content: [
+          {
+            type: 'heading',
+            text: 'Cadena de Efectos Profesional'
+          },
+          {
+            type: 'paragraph',
+            text: 'La cadena de efectos en el fusion debe ser transparente y musical, realzando las cualidades naturales del instrumento sin dominar el sonido.'
+          },
+          {
+            type: 'subheading',
+            text: 'Orden de Efectos Recomendado'
+          },
+          {
+            type: 'list',
+            items: [
+              '1. Compressor: TC Electronic Hypergravity o Empress',
+              '2. Overdrive: Ibanez TS808 para boost transparente',
+              '3. Chorus: Boss CE-2 o TC Corona para espacialidad',
+              '4. Delay: TC Flashback o Strymon Timeline',
+              '5. Reverb: Strymon BigSky o TC Hall of Fame'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Configuración Chorus (Boss CE-2):\nRate: 10 o\'clock\nDepth: 12 o\'clock\nLevel: Unity gain\nResultado: Espacialidad sutil'
+          },
+          {
+            type: 'highlight',
+            text: 'Principio fundamental: Menos es más. Cada efecto debe tener un propósito musical específico, no ser decorativo.'
+          }
+        ]
+      },
+      {
+        id: 'guitarras-fusion',
+        title: 'Guitarras Ideales para Fusion',
+        description: 'Características y modelos recomendados para fusion',
+        duration: '35 min',
+        difficulty: 'Principiante',
+        content: [
+          {
+            type: 'heading',
+            text: 'Características Esenciales'
+          },
+          {
+            type: 'paragraph',
+            text: 'Una guitarra para fusion debe ofrecer versatilidad tonal, comodidad para técnicas avanzadas y construcción que permita expresión musical completa.'
+          },
+          {
+            type: 'subheading',
+            text: 'Especificaciones Técnicas'
+          },
+          {
+            type: 'list',
+            items: [
+              'Pastillas: Humbuckers para potencia, singles para claridad',
+              'Mástil: Perfil delgado para técnicas rápidas',
+              'Escala: 25.5" para tensión óptima',
+              'Puente: Floyd Rose o fijo según preferencia'
+            ]
+          },
+          {
+            type: 'subheading',
+            text: 'Modelos Recomendados'
+          },
+          {
+            type: 'list',
+            items: [
+              'Ibanez RG/S Series: Versatilidad y comodidad',
+              'Fender Stratocaster: Sonido clásico, muy versátil',
+              'Gibson ES-335: Calidez y sustain natural',
+              'PRS Custom 24: Balance perfecto de características'
+            ]
+          }
+        ]
+      },
+      {
+        id: 'grabacion-fusion',
+        title: 'Técnicas de Grabación',
+        description: 'Captura profesional del sonido de guitarra fusion',
+        duration: '50 min',
+        difficulty: 'Avanzado',
+        content: [
+          {
+            type: 'heading',
+            text: 'Microfonía de Amplificadores'
+          },
+          {
+            type: 'paragraph',
+            text: 'La captura del sonido de amplificador requiere técnicas específicas para preservar las características tonales del fusion.'
+          },
+          {
+            type: 'subheading',
+            text: 'Técnicas de Microfonía'
+          },
+          {
+            type: 'list',
+            items: [
+              'Close miking: Shure SM57 a 2-3 cm del parlante',
+              'Room miking: Micrófono condensador para ambiente',
+              'Combinación: Mezcla de close y room para profundidad',
+              'Posicionamiento: Off-axis para reducir agudos duros'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Setup de Grabación:\nSM57: Close, on-axis\nAKG C414: Room, 1 metro\nMezcla: 70% close, 30% room\nEQ: High-pass a 80Hz'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'composicion-arreglos',
+    title: 'Composición y Arreglos',
+    icon: BookOpen,
+    description: 'Creación de música fusion original y arreglos sofisticados',
+    sections: [
+      {
+        id: 'forma-musical',
+        title: 'Forma Musical en el Fusion',
+        description: 'Estructuras compositivas características del género',
+        duration: '45 min',
+        difficulty: 'Avanzado',
+        content: [
+          {
+            type: 'heading',
+            text: 'Estructuras Formales del Fusion'
+          },
+          {
+            type: 'paragraph',
+            text: 'El fusion desarrolló formas musicales únicas que combinan la libertad del jazz con la estructura del rock, creando formatos que sirven tanto para composición como para improvisación.'
+          },
+          {
+            type: 'subheading',
+            text: 'Forma AABA Expandida'
+          },
+          {
+            type: 'list',
+            items: [
+              'A: Tema principal (8-16 compases)',
+              'A: Repetición con variaciones sutiles',
+              'B: Puente contrastante (modulación o cambio modal)',
+              'A: Retorno del tema con desarrollo'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Estructura "Birdland":\nIntro (8) - A (16) - A (16) - B (16) - A (16)\nSolo Section (32) - A (16) - Outro (8)\nTotal: 128 compases'
+          }
+        ]
+      },
+      {
+        id: 'arreglos-ensemble',
+        title: 'Arreglos para Ensemble',
+        description: 'Escritura para grupos de fusion de diferentes formaciones',
+        duration: '55 min',
+        difficulty: 'Experto',
+        content: [
+          {
+            type: 'heading',
+            text: 'Orquestación en el Fusion'
+          },
+          {
+            type: 'paragraph',
+            text: 'Los arreglos de fusion requieren comprensión profunda de las características de cada instrumento y cómo interactúan para crear texturas musicales complejas.'
+          },
+          {
+            type: 'subheading',
+            text: 'Roles Instrumentales'
+          },
+          {
+            type: 'list',
+            items: [
+              'Guitarra: Melodía, armonía, texturas',
+              'Teclados: Pads, solos, efectos sonoros',
+              'Bajo: Fundamento armónico, líneas melódicas',
+              'Batería: Groove, dinámicas, colores tímbricos'
+            ]
+          },
+          {
+            type: 'highlight',
+            text: 'Principio clave: Cada instrumento debe tener momentos para brillar individualmente mientras contribuye al sonido conjunto.'
+          }
+        ]
+      },
+      {
+        id: 'composicion-modal',
+        title: 'Composición Modal',
+        description: 'Creación de música basada en modos y centros tonales',
+        duration: '40 min',
+        difficulty: 'Avanzado',
+        content: [
+          {
+            type: 'heading',
+            text: 'Composición Basada en Modos'
+          },
+          {
+            type: 'paragraph',
+            text: 'La composición modal permite crear música que escapa de las limitaciones del sistema tonal mayor-menor, ofreciendo colores armónicos únicos.'
+          },
+          {
+            type: 'subheading',
+            text: 'Establecimiento de Centros Modales'
+          },
+          {
+            type: 'list',
+            items: [
+              'Pedal tones: Notas sostenidas que establecen el centro',
+              'Cadencias modales: Resoluciones que refuerzan el modo',
+              'Melodías características: Frases que definen el color modal',
+              'Armonías de apoyo: Acordes que sostienen la modalidad'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Progresión Dórica:\nDm7 - Em7b5 - Fmaj7 - Gm7\nCentro: D dórico\nCaracterística: 6ta mayor (B natural)'
           }
         ]
       }
@@ -657,27 +959,6 @@ export const modules: Module[] = [
           {
             type: 'code',
             text: 'Ejercicio Spider (tempo 60 BPM):\nE: 5-6-7-8\nB: 5-6-7-8\nG: 5-6-7-8\nD: 5-6-7-8\nSubir un traste cada repetición'
-          },
-          {
-            type: 'subheading',
-            text: 'Alternate Picking Extremo'
-          },
-          {
-            type: 'paragraph',
-            text: 'El alternate picking preciso es esencial para las velocidades requeridas en el fusion moderno.'
-          },
-          {
-            type: 'list',
-            items: [
-              'Escalas cromáticas: Picking estricto en todas las posiciones',
-              'String skipping: Saltos de cuerdas manteniendo alternancia',
-              'Tremolo picking: Picking rápido en una sola nota',
-              'Accent patterns: Acentos específicos en secuencias de picking'
-            ]
-          },
-          {
-            type: 'highlight',
-            text: 'Regla de oro: Nunca sacrifiques la precisión por la velocidad. La velocidad es el resultado natural de la precisión perfeccionada.'
           }
         ]
       },
@@ -712,27 +993,40 @@ export const modules: Module[] = [
           {
             type: 'highlight',
             text: 'Investigación científica: Estudios demuestran que la práctica mental puede ser hasta 70% tan efectiva como la práctica física para ciertos aspectos del aprendizaje musical.'
-          },
+          }
+        ]
+      },
+      {
+        id: 'rutinas-calentamiento',
+        title: 'Rutinas de Calentamiento',
+        description: 'Preparación física y mental para sesiones de práctica',
+        duration: '25 min',
+        difficulty: 'Todos los niveles',
+        content: [
           {
-            type: 'subheading',
-            text: 'Uso Creativo del Metrónomo'
+            type: 'heading',
+            text: 'Calentamiento Físico Progresivo'
           },
           {
             type: 'paragraph',
-            text: 'El metrónomo es mucho más que una herramienta de tempo; puede ser usado creativamente para desarrollar aspectos rítmicos sofisticados.'
+            text: 'Un calentamiento adecuado previene lesiones y optimiza el rendimiento durante la práctica intensiva.'
+          },
+          {
+            type: 'subheading',
+            text: 'Secuencia de Calentamiento'
           },
           {
             type: 'list',
             items: [
-              'Displacement practice: Metrónomo en tiempos débiles',
-              'Subdivision training: Diferentes subdivisiones sobre el click',
-              'Polyrhythmic practice: Tocar en 3 mientras el metrónomo marca 4',
-              'Tempo modulation: Cambios graduales de velocidad'
+              'Estiramientos de muñeca y dedos (5 min)',
+              'Ejercicios cromáticos lentos (5 min)',
+              'Escalas en tempo moderado (5 min)',
+              'Técnicas específicas gradualmente (10 min)'
             ]
           },
           {
             type: 'code',
-            text: 'Ejercicio Metrónomo Creativo:\nMetrónomo en 60 BPM en tiempos 2 y 4\nTocar escalas sintiendo 1 y 3 internamente\nDesarrolla independencia rítmica'
+            text: 'Ejercicio Cromático de Calentamiento:\nTempo: 60 BPM\nE: 1-2-3-4 (repetir en todas las cuerdas)\nIncremento: +10 BPM cada 2 minutos\nMáximo: 120 BPM'
           }
         ]
       },
@@ -765,38 +1059,448 @@ export const modules: Module[] = [
             ]
           },
           {
+            type: 'highlight',
+            text: 'Principio fundamental: La técnica debe servir a la música, no al revés. Evalúa siempre el impacto musical de tus mejoras técnicas.'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'produccion-grabacion',
+    title: 'Producción y Grabación',
+    icon: Mic,
+    description: 'Técnicas profesionales de grabación y producción musical',
+    sections: [
+      {
+        id: 'home-studio',
+        title: 'Configuración de Home Studio',
+        description: 'Montaje de estudio casero para grabaciones profesionales',
+        duration: '45 min',
+        difficulty: 'Intermedio',
+        content: [
+          {
+            type: 'heading',
+            text: 'Equipamiento Esencial del Home Studio'
+          },
+          {
+            type: 'paragraph',
+            text: 'Un home studio bien configurado permite obtener grabaciones de calidad profesional con inversión moderada y conocimiento técnico adecuado.'
+          },
+          {
             type: 'subheading',
-            text: 'Evaluación Musical'
+            text: 'Componentes Fundamentales'
           },
           {
             type: 'list',
             items: [
-              'Coherencia melódica: Desarrollo lógico de ideas musicales',
-              'Variedad rítmica: Diversidad en patrones rítmicos',
-              'Uso del espacio: Balance entre notas y silencios',
-              'Expresividad dinámica: Rango y control de dinámicas'
+              'Audio Interface: Focusrite Scarlett o RME Babyface',
+              'Monitores: Yamaha HS8 o KRK Rokit para referencia',
+              'DAW: Pro Tools, Logic Pro o Reaper',
+              'Microfonos: SM57 para amplificador, condensador para ambiente'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Configuración Audio Interface:\nSample Rate: 48kHz\nBuffer Size: 128 samples (baja latencia)\nBit Depth: 24-bit\nMonitoreo: Direct monitoring ON'
+          }
+        ]
+      },
+      {
+        id: 'mezcla-fusion',
+        title: 'Mezcla de Guitarra Fusion',
+        description: 'Técnicas de mezcla específicas para el género fusion',
+        duration: '50 min',
+        difficulty: 'Avanzado',
+        content: [
+          {
+            type: 'heading',
+            text: 'EQ para Guitarra Fusion'
+          },
+          {
+            type: 'paragraph',
+            text: 'La ecualización de guitarra fusion debe realzar la claridad y definición mientras mantiene la calidez y musicalidad características del género.'
+          },
+          {
+            type: 'subheading',
+            text: 'Frecuencias Clave'
+          },
+          {
+            type: 'list',
+            items: [
+              '80-120 Hz: High-pass para limpiar graves innecesarios',
+              '200-400 Hz: Calidez controlada, evitar acumulación',
+              '1-3 kHz: Presencia y claridad de notas',
+              '8-12 kHz: Brillo y definición de armónicos'
             ]
           },
           {
             type: 'highlight',
-            text: 'Principio fundamental: La técnica debe servir a la música, no al revés. Evalúa siempre el impacto musical de tus mejoras técnicas.'
-          },
+            text: 'Técnica profesional: Usa EQ sustractivo antes que aditivo. Quita frecuencias problemáticas antes de realzar las deseadas.'
+          }
+        ]
+      },
+      {
+        id: 'mastering-fusion',
+        title: 'Mastering para Fusion',
+        description: 'Finalización profesional de grabaciones fusion',
+        duration: '40 min',
+        difficulty: 'Avanzado',
+        content: [
           {
-            type: 'subheading',
-            text: 'Desarrollo del Oído Musical'
+            type: 'heading',
+            text: 'Objetivos del Mastering Fusion'
           },
           {
             type: 'paragraph',
-            text: 'El desarrollo auditivo es tan importante como el técnico para un músico de fusion completo.'
+            text: 'El mastering de fusion debe preservar la dinámica natural del género mientras asegura competitividad comercial y traducción en diferentes sistemas de reproducción.'
+          },
+          {
+            type: 'subheading',
+            text: 'Cadena de Mastering'
           },
           {
             type: 'list',
             items: [
-              'Reconocimiento de intervalos: Identificación precisa de distancias tonales',
-              'Análisis armónico auditivo: Reconocer progresiones sin partitura',
-              'Transcripción: Escribir música solo por audición',
-              'Relative pitch: Desarrollo del oído relativo avanzado'
+              'EQ correctivo: Ajustes sutiles de balance tonal',
+              'Compresión multibanda: Control dinámico por rangos',
+              'Exciter armónico: Realce sutil de armónicos',
+              'Limitador: Control de picos manteniendo dinámica'
             ]
+          },
+          {
+            type: 'code',
+            text: 'Parámetros Mastering Fusion:\nLUFS: -14 a -16 (preservar dinámica)\nPeak: -1 dBFS máximo\nRango dinámico: 8-12 dB mínimo'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'desarrollo-auditivo',
+    title: 'Desarrollo Auditivo',
+    icon: Headphones,
+    description: 'Entrenamiento del oído musical para fusion avanzado',
+    sections: [
+      {
+        id: 'transcripcion-avanzada',
+        title: 'Transcripción Avanzada',
+        description: 'Técnicas para transcribir música fusion compleja',
+        duration: '50 min',
+        difficulty: 'Avanzado',
+        content: [
+          {
+            type: 'heading',
+            text: 'Metodología de Transcripción Profesional'
+          },
+          {
+            type: 'paragraph',
+            text: 'La transcripción es la herramienta más poderosa para desarrollar el oído musical y absorber el lenguaje de los maestros del fusion.'
+          },
+          {
+            type: 'subheading',
+            text: 'Proceso Sistemático'
+          },
+          {
+            type: 'list',
+            items: [
+              'Primera escucha: Estructura general y forma',
+              'Segunda escucha: Armonía y progresiones',
+              'Tercera escucha: Melodía y líneas principales',
+              'Cuarta escucha: Detalles rítmicos y articulación'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Herramientas de Transcripción:\nSoftware: Transcribe! o Amazing Slow Downer\nVelocidad: 50% para pasajes complejos\nLoop: Secciones de 2-4 compases\nNotación: Sibelius o MuseScore'
+          }
+        ]
+      },
+      {
+        id: 'reconocimiento-acordes',
+        title: 'Reconocimiento de Acordes Complejos',
+        description: 'Identificación auditiva de armonías sofisticadas',
+        duration: '35 min',
+        difficulty: 'Avanzado',
+        content: [
+          {
+            type: 'heading',
+            text: 'Identificación de Extensiones y Alteraciones'
+          },
+          {
+            type: 'paragraph',
+            text: 'El reconocimiento de acordes complejos requiere entrenamiento sistemático para distinguir las sutilezas armónicas del fusion.'
+          },
+          {
+            type: 'subheading',
+            text: 'Metodología de Reconocimiento'
+          },
+          {
+            type: 'list',
+            items: [
+              'Bajo: Identificar la fundamental primero',
+              'Calidad: Mayor, menor, dominante, disminuido',
+              'Extensiones: 7ma, 9na, 11va, 13va',
+              'Alteraciones: b5, #5, b9, #9, #11, b13'
+            ]
+          },
+          {
+            type: 'highlight',
+            text: 'Técnica de entrenamiento: Practica con acordes conocidos antes de intentar identificar acordes en contexto musical complejo.'
+          }
+        ]
+      },
+      {
+        id: 'analisis-ritmico',
+        title: 'Análisis Rítmico Avanzado',
+        description: 'Comprensión profunda de estructuras rítmicas complejas',
+        duration: '40 min',
+        difficulty: 'Avanzado',
+        content: [
+          {
+            type: 'heading',
+            text: 'Polirritmos y Métricas Complejas'
+          },
+          {
+            type: 'paragraph',
+            text: 'El análisis rítmico avanzado permite comprender y ejecutar las estructuras rítmicas sofisticadas que caracterizan el fusion progresivo.'
+          },
+          {
+            type: 'subheading',
+            text: 'Técnicas de Análisis'
+          },
+          {
+            type: 'list',
+            items: [
+              'Identificación de pulso: Encontrar el beat fundamental',
+              'Agrupaciones: Cómo se organizan las subdivisiones',
+              'Acentos: Patrones de énfasis rítmico',
+              'Superposiciones: Múltiples niveles rítmicos simultáneos'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Análisis de 7/8:\nAgrupación 1: 3+4 (ONE-two-three-FOUR-five-six-seven)\nAgrupación 2: 4+3 (ONE-two-three-four-FIVE-six-seven)\nCada agrupación crea feeling diferente'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'fusion-contemporaneo',
+    title: 'Fusion Contemporáneo',
+    icon: TrendingUp,
+    description: 'Tendencias actuales y evolución del género',
+    sections: [
+      {
+        id: 'fusion-electronico',
+        title: 'Fusion Electrónico',
+        description: 'Integración de elementos electrónicos en el fusion moderno',
+        duration: '45 min',
+        difficulty: 'Avanzado',
+        content: [
+          {
+            type: 'heading',
+            text: 'Síntesis Analógica en el Fusion'
+          },
+          {
+            type: 'paragraph',
+            text: 'La integración de sintetizadores y elementos electrónicos ha creado nuevas posibilidades sonoras que definen el fusion contemporáneo.'
+          },
+          {
+            type: 'subheading',
+            text: 'Sintetizadores Clásicos'
+          },
+          {
+            type: 'list',
+            items: [
+              'Minimoog: Bajos potentes y leads expresivos',
+              'Rhodes: Piano eléctrico icónico del fusion',
+              'Oberheim: Pads y texturas atmosféricas',
+              'Prophet-5: Versatilidad y calidez analógica'
+            ]
+          },
+          {
+            type: 'highlight',
+            text: 'Evolución moderna: Los plugins VST actuales recrean fielmente estos sonidos clásicos, democratizando el acceso a estas sonoridades.'
+          }
+        ]
+      },
+      {
+        id: 'world-fusion',
+        title: 'World Fusion',
+        description: 'Incorporación de elementos musicales de diferentes culturas',
+        duration: '40 min',
+        difficulty: 'Intermedio',
+        content: [
+          {
+            type: 'heading',
+            text: 'Elementos Musicales Globales'
+          },
+          {
+            type: 'paragraph',
+            text: 'El world fusion incorpora elementos de músicas tradicionales de todo el mundo, creando un lenguaje musical verdaderamente global.'
+          },
+          {
+            type: 'subheading',
+            text: 'Influencias Principales'
+          },
+          {
+            type: 'list',
+            items: [
+              'Música India: Ragas, microtonalidad, ornamentación',
+              'Flamenco: Técnicas percusivas, escalas españolas',
+              'Música Brasileña: Ritmos complejos, armonías sofisticadas',
+              'Música Africana: Polirritmos, call-and-response'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Raga Yaman (Lidio):\nC-D-E-F#-G-A-B-C\nOrnamentación: Meend (bending)\nFraseo: Alap (libre) → Jor (rítmico)'
+          }
+        ]
+      },
+      {
+        id: 'fusion-metal',
+        title: 'Progressive Metal Fusion',
+        description: 'Fusión entre metal progresivo y jazz fusion',
+        duration: '50 min',
+        difficulty: 'Experto',
+        content: [
+          {
+            type: 'heading',
+            text: 'La Síntesis Metal-Jazz'
+          },
+          {
+            type: 'paragraph',
+            text: 'El progressive metal fusion combina la agresividad y potencia del metal con la sofisticación armónica del jazz, creando un género híbrido único.'
+          },
+          {
+            type: 'subheading',
+            text: 'Características Técnicas'
+          },
+          {
+            type: 'list',
+            items: [
+              'Distorsión controlada: Ganancia alta manteniendo claridad',
+              'Técnicas híbridas: Sweep + alternate picking',
+              'Armonías complejas: Jazz harmony con potencia metal',
+              'Métricas extremas: 23/16, 17/8, progresiones asimétricas'
+            ]
+          },
+          {
+            type: 'highlight',
+            text: 'Bandas referencia: Animals as Leaders, Plini, Intervals han definido este subgénero con aproximaciones únicas.'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'masterclasses',
+    title: 'Masterclasses Especializadas',
+    icon: Brain,
+    description: 'Lecciones magistrales de técnicas específicas',
+    sections: [
+      {
+        id: 'chord-melody',
+        title: 'Chord Melody Avanzado',
+        description: 'Técnicas para tocar melodía y armonía simultáneamente',
+        duration: '60 min',
+        difficulty: 'Experto',
+        content: [
+          {
+            type: 'heading',
+            text: 'Fundamentos del Chord Melody'
+          },
+          {
+            type: 'paragraph',
+            text: 'El chord melody permite a un solo guitarrista crear arreglos completos que incluyen melodía, armonía y bajo, técnica esencial para el jazz fusion solista.'
+          },
+          {
+            type: 'subheading',
+            text: 'Técnicas de Voicing'
+          },
+          {
+            type: 'list',
+            items: [
+              'Melodía en la voz superior: Nota melódica como cuerda más aguda',
+              'Armonización por cuartas: Voicings modernos y abiertos',
+              'Bass lines independientes: Bajo que se mueve independientemente',
+              'Voice leading suave: Movimiento mínimo entre acordes'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Chord Melody "Autumn Leaves":\nCmaj7 (melodía G): x-3-5-4-5-x\nAm7 (melodía F): x-0-2-0-1-x\nVoice leading: Movimiento mínimo'
+          }
+        ]
+      },
+      {
+        id: 'composicion-instantanea',
+        title: 'Composición Instantánea',
+        description: 'Técnicas para crear música en tiempo real',
+        duration: '45 min',
+        difficulty: 'Avanzado',
+        content: [
+          {
+            type: 'heading',
+            text: 'Improvisación Compositiva'
+          },
+          {
+            type: 'paragraph',
+            text: 'La composición instantánea combina improvisación con estructura compositiva, permitiendo crear música coherente y sofisticada en tiempo real.'
+          },
+          {
+            type: 'subheading',
+            text: 'Herramientas Compositivas'
+          },
+          {
+            type: 'list',
+            items: [
+              'Motivos semilla: Ideas básicas para desarrollo',
+              'Variación sistemática: Transformaciones predecibles',
+              'Forma emergente: Estructura que surge naturalmente',
+              'Interacción grupal: Composición colaborativa en tiempo real'
+            ]
+          },
+          {
+            type: 'highlight',
+            text: 'Concepto avanzado: Keith Jarrett demostró que la composición instantánea puede crear obras maestras comparables a composiciones escritas.'
+          }
+        ]
+      },
+      {
+        id: 'fusion-pedagogia',
+        title: 'Pedagogía del Fusion',
+        description: 'Métodos de enseñanza específicos para el género',
+        duration: '35 min',
+        difficulty: 'Intermedio',
+        content: [
+          {
+            type: 'heading',
+            text: 'Metodologías de Enseñanza Efectivas'
+          },
+          {
+            type: 'paragraph',
+            text: 'La enseñanza del fusion requiere enfoques pedagógicos específicos que respeten la complejidad del género mientras mantienen la accesibilidad para el estudiante.'
+          },
+          {
+            type: 'subheading',
+            text: 'Progresión Curricular'
+          },
+          {
+            type: 'list',
+            items: [
+              'Fundamentos sólidos: Jazz tradicional como base',
+              'Introducción gradual: Elementos fusion progresivamente',
+              'Práctica contextual: Siempre en contexto musical',
+              'Creatividad personal: Desarrollo de voz propia'
+            ]
+          },
+          {
+            type: 'code',
+            text: 'Secuencia de Aprendizaje:\nMes 1-3: Jazz standards básicos\nMes 4-6: Introducción a acordes extendidos\nMes 7-9: Escalas modales\nMes 10-12: Técnicas fusion específicas'
           }
         ]
       }
