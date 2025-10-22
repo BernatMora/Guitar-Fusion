@@ -21,7 +21,7 @@ const ModuleContent: React.FC<ModuleContentProps> = ({
 }) => {
   if (!section) {
     return (
-      <div className="p-8">
+      <div className="p-4 md:p-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center py-12">
             <h2 className="text-2xl font-semibold text-slate-600 mb-4">
@@ -41,13 +41,13 @@ const ModuleContent: React.FC<ModuleContentProps> = ({
       switch (block.type) {
         case 'heading':
           return (
-            <h2 key={index} className="text-2xl font-bold text-slate-800 mb-4 mt-8 first:mt-0">
+            <h2 key={index} className="text-xl md:text-2xl font-bold text-slate-800 mb-4 mt-8 first:mt-0">
               {block.text}
             </h2>
           );
         case 'subheading':
           return (
-            <h3 key={index} className="text-xl font-semibold text-slate-700 mb-3 mt-6">
+            <h3 key={index} className="text-lg md:text-xl font-semibold text-slate-700 mb-3 mt-6">
               {block.text}
             </h3>
           );
@@ -73,8 +73,8 @@ const ModuleContent: React.FC<ModuleContentProps> = ({
           );
         case 'code':
           return (
-            <div key={index} className="bg-slate-800 text-slate-100 p-4 rounded-lg mb-4 overflow-x-auto">
-              <pre className="text-sm font-mono">{block.text}</pre>
+            <div key={index} className="bg-slate-800 text-slate-100 p-3 md:p-4 rounded-lg mb-4 overflow-x-auto">
+              <pre className="text-xs md:text-sm font-mono">{block.text}</pre>
             </div>
           );
         default:
@@ -89,12 +89,12 @@ const ModuleContent: React.FC<ModuleContentProps> = ({
     currentModule.sections[currentSectionIndex + 1] : null;
 
   return (
-    <div className="p-8">
+    <div className="p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
         {/* Header Section */}
         <div className="mb-8">
-          <div className="flex items-center justify-between mb-4">
-            <h1 className="text-3xl font-bold text-slate-800">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-4">
+            <h1 className="text-2xl md:text-3xl font-bold text-slate-800">
               {section.title}
             </h1>
             <div className="flex items-center space-x-4 text-sm text-slate-500">
@@ -140,11 +140,11 @@ const ModuleContent: React.FC<ModuleContentProps> = ({
         </div>
 
         {/* Navigation */}
-        <div className="flex items-center justify-between mt-12 pt-8 border-t border-slate-200">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 mt-12 pt-8 border-t border-slate-200">
           <button
             onClick={() => onNavigate('prev')}
             disabled={!canNavigatePrev}
-            className={`flex items-center space-x-2 px-6 py-3 rounded-lg border transition-all duration-200 ${
+            className={`flex items-center justify-center space-x-2 px-4 md:px-6 py-2 md:py-3 rounded-lg border transition-all duration-200 text-sm md:text-base ${
               canNavigatePrev
                 ? 'bg-white hover:bg-slate-50 text-slate-700 border-slate-300 hover:border-slate-400 shadow-sm hover:shadow'
                 : 'bg-slate-100 text-slate-400 border-slate-200 cursor-not-allowed'
@@ -158,7 +158,7 @@ const ModuleContent: React.FC<ModuleContentProps> = ({
           <button
             onClick={() => onNavigate('next')}
             disabled={!canNavigateNext}
-            className={`flex items-center space-x-2 px-6 py-3 rounded-lg border transition-all duration-200 ${
+            className={`flex items-center justify-center space-x-2 px-4 md:px-6 py-2 md:py-3 rounded-lg border transition-all duration-200 text-sm md:text-base ${
               canNavigateNext
                 ? 'bg-amber-500 hover:bg-amber-600 text-white border-amber-500 shadow-sm hover:shadow'
                 : 'bg-slate-100 text-slate-400 border-slate-200 cursor-not-allowed'

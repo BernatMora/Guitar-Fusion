@@ -29,12 +29,12 @@ const Navigation: React.FC<NavigationProps> = ({
   };
 
   return (
-    <nav className="h-screen overflow-y-auto py-6">
-      <div className="px-6 mb-6">
-        <h2 className="text-lg font-semibold text-slate-800 mb-2">
+    <nav className="h-[calc(100vh-4rem)] lg:h-screen overflow-y-auto py-6">
+      <div className="px-4 md:px-6 mb-6">
+        <h2 className="text-base md:text-lg font-semibold text-slate-800 mb-2">
           Módulos de Estudio
         </h2>
-        <p className="text-sm text-slate-600">
+        <p className="text-xs md:text-sm text-slate-600">
           Contenido estructurado para el desarrollo profesional
         </p>
       </div>

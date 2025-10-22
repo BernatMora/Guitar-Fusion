@@ -7,6 +7,7 @@ import { modules } from './data/modules';
 function App() {
   const [activeModule, setActiveModule] = useState(modules[0].id);
   const [activeSection, setActiveSection] = useState(modules[0].sections[0].id);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleModuleChange = (moduleId: string) => {
     setActiveModule(moduleId);
@@ -18,6 +19,7 @@ function App() {
 
   const handleSectionChange = (sectionId: string) => {
     setActiveSection(sectionId);
+    setMobileMenuOpen(false);
   };
 
   const currentModule = modules.find(m => m.id === activeModule);
@@ -42,10 +44,12 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <Header />
+      <Header onMenuClick={() => setMobileMenuOpen(!mobileMenuOpen)} />
       
       <div className="flex">
-        <aside className="w-80 bg-white shadow-sm border-r border-slate-200">
+        <aside className={`fixed lg:static inset-y-0 left-0 z-40 w-80 bg-white shadow-sm border-r border-slate-200 transform transition-transform duration-300 ease-in-out lg:transform-none ${
+          mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}>
           <Navigation
             modules={modules}
             activeModule={activeModule}
@@ -54,8 +58,15 @@ function App() {
             onSectionChange={handleSectionChange}
           />
         </aside>
-        
-        <main className="flex-1">
+
+        {mobileMenuOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"
+            onClick={() => setMobileMenuOpen(false)}
+          />
+        )}
+
+        <main className="flex-1 w-full lg:w-auto">
           <ModuleContent
             section={currentSection}
             onNavigate={navigateToSection}
